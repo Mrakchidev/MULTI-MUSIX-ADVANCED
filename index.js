@@ -1,26 +1,3 @@
-/*
-
-   MADE BY RTX!! FEEL FREE TO USE ANY PART OF CODE
-
-
-  ██████╗░████████╗██╗░░██╗           
-  ██╔══██╗╚══██╔══╝╚██╗██╔╝          
-  ██████╔╝░░░██║░░░░╚███╔╝░          
-  ██╔══██╗░░░██║░░░░██╔██╗░          
-  ██║░░██║░░░██║░░░██╔╝╚██╗          
-  ╚═╝░░╚═╝░░░╚═╝░░░╚═╝░░╚═╝          
-
-   FOR EMOJIS EITHER YOU CAN EDIT OR JOIN OUR DISCORD SERVER 
-   SO WE ADD BOT TO OUR SERVER SO YOU GET ANIMATED EMOJIS.
-
-   DISCORD SERVER : https://discord.gg/FUEHs7RCqz
-   YOUTUBE : https://www.youtube.com/channel/UCPbAvYWBgnYhliJa1BIrv0A
-
-   FOR HELP CONTACT ME ON DISCORD
-   ## Contact    [ DISCORD SERVER :  https://discord.gg/c4kaW2sSbm ]
-   
-*/
-
 const { Client, GatewayIntentBits, ActivityType } = require('discord.js');
 const { EmbedBuilder } = require('discord.js');
 const fs = require('fs');
@@ -144,7 +121,7 @@ client.once('ready', () => {
   setTimeout(() => {
     console.log('\x1b[32m%s\x1b[0m', `|    🎯 Activity sucessfully set!`);
     client.user.setPresence({
-      activities: [{ name: `Update Out V@1.5`, type: ActivityType.Watching }],
+      activities: [{ name: `MrakBot MusicV2 v@1.0 | By : MRAKCHI`, type: ActivityType.Watching }],
       status: 'idle',
     });
   }, 2000); 
@@ -162,24 +139,3 @@ setInterval(() => {
 }, 15000);
 
 module.exports = client;
-
-
-/*
-   MADE BY RTX!! FEEL FREE TO USE ANY PART OF CODE
-
-  ██████╗░████████╗██╗░░██╗           
-  ██╔══██╗╚══██╔══╝╚██╗██╔╝          
-  ██████╔╝░░░██║░░░░╚███╔╝░          
-  ██╔══██╗░░░██║░░░░██╔██╗░          
-  ██║░░██║░░░██║░░░██╔╝╚██╗          
-  ╚═╝░░╚═╝░░░╚═╝░░░╚═╝░░╚═╝          
-
-   FOR EMOJIS EITHER YOU CAN EDIT OR JOIN OUR DISCORD SERVER 
-   SO WE ADD BOT TO OUR SERVER SO YOU GET ANIMATED EMOJIS.
-
-   DISCORD SERVER : https://discord.gg/FUEHs7RCqz
-   YOUTUBE : https://www.youtube.com/channel/UCPbAvYWBgnYhliJa1BIrv0A
-
-   FOR HELP CONTACT ME ON DISCORD
-   ## Contact    [ DISCORD SERVER :  https://discord.gg/c4kaW2sSbm ]
-*/
