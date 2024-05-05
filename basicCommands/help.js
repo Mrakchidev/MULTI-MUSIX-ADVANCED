@@ -17,7 +17,7 @@ module.exports = {
         url: 'https://discord.com/invite/NKZY47ZKj8'
     })
      
-      .setDescription(`__**STATS :**__\n\n> **📊 Bot in servers:** ${serverCount}\n> **🟢 Bot Ping:** ${botPing}ms\n> **👑 Made By [RTX](https://www.youtube.com/channel/UCPbAvYWBgnYhliJa1BIrv0A)**\n\n__**COMMANDS :**__ `)
+      .setDescription(`__**STATS :**__\n\n> **📊 Bot in servers:** ${serverCount}\n> **🟢 Bot Ping:** ${botPing}ms\n> **👑 Dev By [MRAKCHI](https://youtube.com/@mrakchi26?si=XmXo98E28ibZt9m1)**\n\n__**COMMANDS :**__ `)
       .addFields(
         // Basic commands category
         {
