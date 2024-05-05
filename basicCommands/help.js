@@ -3,7 +3,7 @@ const { ButtonStyle } = require('discord.js');
 const db = require("../mongodb");
 module.exports = {
   name: 'help',
-  aliases: ['hlp', 'h'],
+  aliases: ['أوامر', 'h'],
   description: 'Shows a list of available commands',
   execute(message, args) {
     const botUser = message.client.user;
@@ -14,7 +14,7 @@ module.exports = {
       .setAuthor({
         name: 'Im here to Help!',
         iconURL: 'https://cdn.discordapp.com/attachments/1175487983915376662/1175667506791325706/communication.png?ex=656c10b0&is=65599bb0&hm=e378f1b355a2401bcab504b08a0766001d6b7c090c91ce0a7a7a87c868feb955&', 
-        url: 'https://discord.gg/FUEHs7RCqz'
+        url: 'https://discord.com/invite/NKZY47ZKj8'
     })
      
       .setDescription(`__**STATS :**__\n\n> **📊 Bot in servers:** ${serverCount}\n> **🟢 Bot Ping:** ${botPing}ms\n> **👑 Made By [RTX](https://www.youtube.com/channel/UCPbAvYWBgnYhliJa1BIrv0A)**\n\n__**COMMANDS :**__ `)
@@ -32,23 +32,23 @@ module.exports = {
           inline: true,
         },
         //fun category
-        {
-          name: '▶️  Fun',
-          value: ' `ascii`, `joke`, `meme`, `roll`',
-          inline: true,
-        },
+    //    {
+    //      name: '▶️  Fun',
+   //       value: ' `ascii`, `joke`, `meme`, `roll`',
+   //       inline: true,
+   //     },
         //image category
-        {
-          name: '▶️  Image',
-          value: '`cat`, `dog`',
-          inline: true,
-        },
+   //     {
+    //      name: '▶️  Image',
+     //     value: '`cat`, `dog`',
+   //       inline: true,
+     //   },
         //anime category
-        {
-          name: '▶️  Anime',
-          value: '`<prefix>animecommands for more info`',
-          inline: true,
-        },
+   //     {
+   //       name: '▶️  Anime',
+ //         value: '`<prefix>animecommands for more info`',
+ //         inline: true,
+ //       },
         // Utility commands category
         {
           name: '▶️  Utility',
@@ -57,25 +57,25 @@ module.exports = {
         }
       )
       .setThumbnail(botUser.avatarURL({ dynamic: true, format: 'png', size: 1024 }))
-      .setImage(`https://cdn.discordapp.com/attachments/1170652474563117138/1224660177039396876/MULTI_MUSIC_v1.5.png?ex=661e4cab&is=660bd7ab&hm=f7a542462fabaf9c1530ece5aa72597cff3ac032876bba46df5ddba7e122ea99&`);
+      .setImage(`https://cdn.discordapp.com/attachments/1236617830846300231/1236664209933336656/Black_White_Modern_Concert_Music_Banner_Landscape_20240505_140022_0000.png?ex=6638d4cb&is=6637834b&hm=481c2f4a138bb4e08812ad97c5adfdff2dc340e52173740297beb33db7121016&`);
 
     const button1 = new ButtonBuilder()
       .setLabel('YouTube')
-      .setURL('https://www.youtube.com/channel/UCPbAvYWBgnYhliJa1BIrv0A')
+      .setURL('https://youtube.com/@mrakchi26?si=XmXo98E28ibZt9m1')
       .setStyle(ButtonStyle.Link);
 
     const button2 = new ButtonBuilder()
       .setLabel('Discord')
-      .setURL('https://discord.gg/FUEHs7RCqz')
+      .setURL('https://discord.com/invite/NKZY47ZKj8')
       .setStyle(ButtonStyle.Link);
 
-    const button3 = new ButtonBuilder()
-      .setLabel('Code')
-      .setURL('https://replit.com/@BEASTGAMERS1/MULTI-MUSIC-BOT-v200?v=1')
-      .setStyle(ButtonStyle.Link);
+  //  const button3 = new ButtonBuilder()
+    //  .setLabel('Code')
+ //     .setURL('https://replit.com/@BEASTGAMERS1/MULTI-MUSIC-BOT-v200?v=1')
+   //   .setStyle(ButtonStyle.Link);
       
     const row = new ActionRowBuilder()
-      .addComponents(button1, button2, button3);
+      .addComponents(button1, button2);
     
     message.reply({ embeds: [embed], components: [row] });
   },
