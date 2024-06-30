@@ -14,7 +14,7 @@ module.exports = {
       .setAuthor({
         name: 'Im here to Help!',
         iconURL: 'https://cdn.discordapp.com/attachments/1175487983915376662/1175667506791325706/communication.png?ex=656c10b0&is=65599bb0&hm=e378f1b355a2401bcab504b08a0766001d6b7c090c91ce0a7a7a87c868feb955&', 
-        url: 'https://discord.com/invite/NKZY47ZKj8'
+        url: 'https://discord.gg/pxh4D3daFz'
     })
      
       .setDescription(`__**STATS :**__\n\n> **📊 Bot in servers:** ${serverCount}\n> **🟢 Bot Ping:** ${botPing}ms\n> **👑 Dev By [MRAKCHI](https://youtube.com/@mrakchi26?si=XmXo98E28ibZt9m1)**\n\n__**COMMANDS :**__ `)
@@ -66,7 +66,7 @@ module.exports = {
 
     const button2 = new ButtonBuilder()
       .setLabel('Discord')
-      .setURL('https://discord.com/invite/NKZY47ZKj8')
+      .setURL('https://discord.gg/pxh4D3daFz')
       .setStyle(ButtonStyle.Link);
 
   //  const button3 = new ButtonBuilder()
